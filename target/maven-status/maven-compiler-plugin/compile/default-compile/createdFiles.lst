@@ -1,0 +1,3 @@
+org\wernerparedes\webapp\sgbdproductos\resources\JakartaEE10Resource.class
+org\wernerparedes\webapp\sgbdproductos\JakartaRestConfiguration.class
+org\wernerparedes\webapp\servlet\ProductoServlet.class
