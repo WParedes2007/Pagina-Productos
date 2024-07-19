@@ -41,7 +41,7 @@
                             <a class="nav-link" href="./formulario-productos/formulario-productos.jsp">Formulario de Productos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./lista-productos/lista-productos.jsp">Lista de Productos</a>
+                            <a class="nav-link" href="./producto-servlet">Lista de Productos</a>
                         </li>
                     </ul>
                 </div>
@@ -79,7 +79,7 @@
 
         </div>
         <div class="container mt-3 form-container">
-            <form action="/SGDBProductosIN5CV/producto-servlet" method="post" endtype="multipart/form-data">
+            <form action="/SGBDProductos/producto-servlet" method="post" endtype="multipart/form-data">
                 <div class="form-floating mb-3">
                     <input type="nombre" class="form-control" id="nombreProducto" name="nombreProducto" placeholder="name@example.com">
                     <label for="floatingInput">Nombre del producto</label>

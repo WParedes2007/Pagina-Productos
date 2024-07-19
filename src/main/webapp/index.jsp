@@ -27,10 +27,10 @@
                                 <a class="nav-link active" aria-current="page" href="./index.jsp">Inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./form-productos/form-productos.html">Formulario de Productos</a>
+                                <a class="nav-link" href="./formulario-productos/formulario-productos.jsp">Formulario de Productos</a>
                             </li> 
                             <li class="nav-item">
-                                <a class="nav-link" href="./lista-productos/lista-productos.html">Lista de Productos</a>
+                                <a class="nav-link" href="./producto-servlet">Lista de Productos</a>
                             </li>
                         </ul>
                     </div>
@@ -60,13 +60,13 @@
         <div id="carouselExample" class="carousel slide">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="\assets\image\Logo.png" class="d-block w-100" alt="logo">
+                    <img src=".\assets\image\Logo.png" class="d-block w-100" alt="logo">
                 </div>
                 <div class="carousel-item">
-                    <img src="\assets\image\verduras.jpg" class="d-block w-100" alt="verduras">
+                    <img src=".\assets\image\verduras.jpg" class="d-block w-100" alt="verduras">
                 </div>
                 <div class="carousel-item">
-                    <img src="\assets\image\fruit.jpeg" class="d-block w-100" alt="frutas">
+                    <img src=".\assets\image\fruit.jpeg" class="d-block w-100" alt="frutas">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">

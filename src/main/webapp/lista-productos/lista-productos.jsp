@@ -1,4 +1,7 @@
+<%@page import="org.wernerparedes.webapp.model.Producto"%>
+<%@page import="java.util.List"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page import="java.util.List"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -21,13 +24,13 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="../index.jsp">Inicio</a>
+                                <a class="nav-link active" aria-current="page" href="./index.jsp">Inicio</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="./formulario-productos/formulario-productos.jsp">Formulario de Productos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./lista-productos/lista-productos.jsp">Lista de Productos</a>
+                                <a class="nav-link" href="./producto-servlet">Lista de Productos</a>
                             </li>
                         </ul>
                     </div>
@@ -47,27 +50,17 @@
                         </tr>
                     </thead>
                     <tbody>
+                        <%List<Producto> productos = (List)request.getAttribute("productos"); %>
+
+                        <% for (Producto producto : productos) {%>
                         <tr>
-                            <th scope="row">1</th>
-                            <td>Cereal</td>
-                            <td>Nesquik</td>
-                            <td>Q100.00</td>
-                            <td>Ojuelas de chocolate</td>
+                            <th scopre="row"><%=producto.getProductoId()%></th>
+                            <th scopre="row"><%=producto.getNombreProducto()%></th>
+                            <th scopre="row"><%=producto.getMarcaProducto()%></th>
+                            <th scopre="row"><%=producto.getDescripcionProducto()%></th>
+                            <th scopre="row"><%=producto.getPrecioProducto()%></th>
                         </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Jugo</td>
-                            <td>Jumex</td>
-                            <td>Q20.00</td>
-                            <td>Zumo sabor naranja</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Jamon</td>
-                            <td>Bremen</td>
-                            <td>Q5.00</td>
-                            <td>Paquete de jamon de cerdo</td>
-                        </tr>
+                        <% }%>
                     </tbody>
                 </table>
             </form>
